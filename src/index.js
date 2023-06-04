@@ -18,7 +18,7 @@ window.addEventListener('load', AOS.refresh);
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter  basename = {process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Provider store={store}>
         <App />
       </Provider>
