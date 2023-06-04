@@ -44,13 +44,14 @@ import { getAuth } from "firebase/auth";
     
     <div onLoad={scrollTop}>
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/Login" element={<Auto />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/WelcomePage" element={<WelcomePage />} />
         <Route path="/UserProfile" element={<UserProfile />} />
       </Routes>
 
-      <HomePage/>
+      
       <div
         className="arrow_container"
         data-aos="fade-in"
