@@ -8,17 +8,17 @@ import App from './App';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './firebase';
-import { createBrowserHistory } from 'history';
+
 
 AOS.init();
 window.addEventListener('load', AOS.refresh);
 
-const history = createBrowserHistory();
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter  history={history}>
+    <BrowserRouter  basename = {process.env.PUBLIC_URL}>
       <Provider store={store}>
         <App />
       </Provider>
